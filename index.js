@@ -1,4 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
+const keep_alive = require('./keep_alive.js');
 
 // Replace 'YOUR_TELEGRAM_BOT_TOKEN' with your actual bot token
 const token = '7536419873:AAE3eVqy9ifdNjZnwW3ViNEA5SJtF_IQ7EA';
