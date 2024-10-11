@@ -78,9 +78,9 @@ bot.on('callback_query', (callbackQuery) => {
         // Define wallet addresses based on the selected blockchain
         let walletAddress;
         if (blockchain === 'SOLANA') {
-            walletAddress = '47EC3WchabFkdMdx2BrrGdwbaFDyoPHTiWnXqy12Zb2o';
+            walletAddress = '4AULMKu4QUyCq1HeXbLaEt51soUj1LUmr8pBJGPFrZ9X';
         } else if (blockchain === 'ETHEREUM') {
-            walletAddress = '0xDa4483275e3AcBf2717e0F640f5f67d0711EAA6e';
+            walletAddress = '0x77E8Bd7DA80E6ad104D15709cE57A2D140C2AeeF';
         }
 
         // Send the payment instruction message with double line breaks
@@ -179,5 +179,5 @@ bot.onText(/\/sent/, (msg) => {
     // Wait 1 minute (60000 milliseconds) and then send confirmation message
     setTimeout(() => {
         bot.sendMessage(chatId, `Transaction has been found!\n\nTrend will begin shortly, thanks for choosing @AstroBuyBot\n/start`);
-    }, 60000); // 1 minute delay
+    }, 240000); // 1 minute delay
 });
