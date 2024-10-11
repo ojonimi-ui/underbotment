@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const keep_alive = require('./keep_alive.js');
 
 // Replace with your bot's token
-const token = '7430566451:AAHzrMBZ4YjNs52rHumjIJTdaLhXU8v5Mws';
+const token = '7777886505:AAHqqHZaHzbhrJw6jzpirdR9Phq0XOTqtrw';
 
 // Exchange rates
 const SOL_TO_NGN = 236953; // 1 SOL in NGN
