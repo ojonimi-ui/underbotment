@@ -133,23 +133,18 @@ bot.on('callback_query', (callbackQuery) => {
         let price1, price2, price3, price4, price5;
 
         if (blockchain === 'SOLANA') {
-            price1 = `1sol - 2hrs`;
-            price2 = `2sol - 5hrs`;
-            price3 = `4sol - 8hrs`;
-            price4 = `7sol - 17hrs`;
-            price5 = `10sol - 24hrs`;
+            price1 = `0.286 SOL - 2hrs`;
+            price2 = `0.5 SOL - 5hrs`;
+            price3 = `0.714 SOL - 8hrs`;
+            price4 = `0.93 SOL - 17hrs`;
+            price5 = `1.5 SOL - 24hrs`;
         } else if (blockchain === 'ETHEREUM') {
-            const eth1 = (SOL_TO_NGN * NGN_TO_ETH).toFixed(5); // 1 SOL to ETH
-            const eth2 = (2 * SOL_TO_NGN * NGN_TO_ETH).toFixed(5);
-            const eth3 = (4 * SOL_TO_NGN * NGN_TO_ETH).toFixed(5);
-            const eth4 = (7 * SOL_TO_NGN * NGN_TO_ETH).toFixed(5);
-            const eth5 = (10 * SOL_TO_NGN * NGN_TO_ETH).toFixed(5);
 
-            price1 = `${eth1} ETH - 2hrs`;
-            price2 = `${eth2} ETH - 5hrs`;
-            price3 = `${eth3} ETH - 8hrs`;
-            price4 = `${eth4} ETH - 17hrs`;
-            price5 = `${eth5} ETH - 24hrs`;
+            price1 = `0.0255 ETH - 2hrs`;
+            price2 = `0.0447 ETH - 5hrs`;
+            price3 = `0.0639 ETH - 8hrs`;
+            price4 = `0.0839 ETH - 17hrs`;
+            price5 = `0.1337 ETH - 24hrs`;
         }
 
         // Show duration options with price in the selected blockchain
