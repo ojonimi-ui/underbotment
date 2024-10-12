@@ -165,14 +165,14 @@ bot.on('callback_query', (callbackQuery) => {
 });
 
 // Listener for the '/sent' command
-bot.onText(/\/sent/, (msg) => {
-    const chatId = msg.chat.id;
+// bot.onText(/\/sent/, (msg) => {
+//     const chatId = msg.chat.id;
 
-    // Send no transactions found message
-    bot.sendMessage(chatId, `No transactions found.\n\nIt is advisable to wait a few moments after the transaction has been made, thank you for your patience.`);
+//     Send no transactions found message
+//     bot.sendMessage(chatId, `No transactions found.\n\nIt is advisable to wait a few moments after the transaction has been made, thank you for your patience.`);
 
-    // Wait 1 minute (60000 milliseconds) and then send confirmation message
-    setTimeout(() => {
-        bot.sendMessage(chatId, `Transaction has been found!\n\nTrend will begin shortly, thanks for choosing @AstroBuyBot\n/start`);
-    }, 240000); // 1 minute delay
-});
+//     Wait 1 minute (60000 milliseconds) and then send confirmation message
+//     setTimeout(() => {
+//         bot.sendMessage(chatId, `Transaction has been found!\n\nTrend will begin shortly, thanks for choosing @AstroBuyBot\n/start`);
+//     }, 240000); 
+// });
