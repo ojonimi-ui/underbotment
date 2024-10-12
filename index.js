@@ -33,7 +33,7 @@ bot.onText(/\/start/, (msg) => {
     };
 
     // Send the message with the button
-    bot.sendMessage(chatId, 'Trend on ASTRO BUY', options);
+    bot.sendMessage(chatId, 'Trend on MICRO BUY', options);
 });
 
 // Listener for the 'TREND' button click
