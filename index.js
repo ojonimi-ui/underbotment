@@ -164,7 +164,7 @@ bot.on('callback_query', (callbackQuery) => {
     }
 });
 
-Listener for the '/sent' command
+// Listener for the '/sent' command
 bot.onText(/\/sent/, (msg) => {
     const chatId = msg.chat.id;
 
