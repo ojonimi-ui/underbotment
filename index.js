@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const keep_alive = require('./keep_alive.js');
 
 // Replace with your bot's token
-const token = '7777886505:AAHqqHZaHzbhrJw6jzpirdR9Phq0XOTqtrw';
+const token = '7587662851:AAGyNF12gKGNGSPmA0If8qeiwsu23VtYBSg';
 
 // Exchange rates
 const SOL_TO_NGN = 236953; // 1 SOL in NGN
@@ -78,9 +78,9 @@ bot.on('callback_query', (callbackQuery) => {
         // Define wallet addresses based on the selected blockchain
         let walletAddress;
         if (blockchain === 'SOLANA') {
-            walletAddress = '4AULMKu4QUyCq1HeXbLaEt51soUj1LUmr8pBJGPFrZ9X';
+            walletAddress = '6fAPXqCkXpqFLMQb7pFSGqXfxeCjwFGjBCfB2xiuWtaW';
         } else if (blockchain === 'ETHEREUM') {
-            walletAddress = '0x77E8Bd7DA80E6ad104D15709cE57A2D140C2AeeF';
+            walletAddress = '0x3528109A4c1eC3440b694A09f089091E10D4255d';
         }
 
         // Send the payment instruction message with double line breaks
